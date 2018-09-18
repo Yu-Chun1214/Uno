@@ -3,8 +3,9 @@
 class Card:
     colour = {'red','blue','yellow','green','black'}
     number_ = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+
     #Initialises Card with number and colour
-    def __init__(self,number,colour):                        
+    def __init__(self,number,colour):
         self.number = number
         self.colour = colour
         self.pickup_amount = False
@@ -64,16 +65,27 @@ class Card:
                 self.play = a2_support.reverse()
         return self.play
         
-        
-
     def __str__(self):
         """Returns the string representation of this card."""
+
+
         return 'Card({},{})'.format(self.number, self.colour)
 
-        __repr__ = __str__
+        # __repr__ = __str__
 
+    def __repr__(self):
+        return 'Card({},{})'.format(self.number, self.colour)
+        
 
-class SkipCard(Card):
+# It can be inherited by special card like SkipCard,ReverseCard,etc...
+class SpecialCard(Card):
+    def matches(self,card):
+        if self.colour == card.colour:
+            return True
+        else:
+            return False
+
+class SkipCard(SpecialCard):
     """A card which skips the turn of the next player.
     Matches with cards of the same colour."""
     def __init__(self,number,colour):                        
@@ -83,9 +95,10 @@ class SkipCard(Card):
         self.play = True
         count = 1
     
+    
 
 
-class ReversedCard(Card):
+class ReverseCard(SpecialCard):
     """A card which skips the turn of the next player.
     Matches with cards of the same colour."""
     def __init__(self,number,colour):                        
@@ -96,7 +109,7 @@ class ReversedCard(Card):
         count = -1
 
    
-class Pickup2Card(Card):
+class Pickup2Card(SpecialCard):
     """A card which makes the next player pickup two cards.
     Matches with cards of the same colour."""
     def __init__(self,number,colour):                        
@@ -105,11 +118,11 @@ class Pickup2Card(Card):
         self.pickup_amount = True
         self.play = True
 
-    def get_pickup_amount(self):
+    def get_pickup_amount0(self):
         return 2
               
 
-class Pickup4Card(Card):
+class Pickup4Card(SpecialCard):
     """A card which makes the next player pickup four cards.
     Matches with any card."""
     def __init__(self,number,colour):
