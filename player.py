@@ -1,35 +1,38 @@
 #Player
+from deck import Deck
 import random
 
 class Player():
     def __init__(self,name):
-        self.name = name
+        self.deck = Deck()
+        self.__name = name
+        self.__playable = False
         
         
         
 
     def get_name(self):
         """Returns the name of the player."""
-        return self.name
+        return self.__name
 
     def get_deck(self):
         """Returns the players deck of cards."""
-        return list(deck)
+        return self.deck.get_cards()
 
     def is_playable(self):
         """Returns True if the players moves aren't automatic."""
-        if self.is_playable == True:
+        if self.__playable == True:
             raise NotImplementedError
-        return self.is_playable
+        return self.__playable
        
     def has_won(self):
         """Returns True if the player has an
         empty deck and has therefore won.
         """
-        if len(deck) == '0':
-            self.has_won = True
+        if self.deck.get_amount() == 0:
+            return True
         else:
-            self.has_won = False
+            return False
 
     def pick_card(self, putdown_pile):
         """ Selects a card to play from the players current deck."""
@@ -44,13 +47,13 @@ class Player():
         
 class HumanPlayer(Player):
     def __init__(self,name):
-        self.is_playable == True
+        self.__playable == True
         self.pick_card == False
         
 
 class ComputerPlayer(Player):
     def __init__(self,name):
-        self.is_playable == False
+        self.__playable == False
         self.pick_card == True 
         
         

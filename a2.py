@@ -6,6 +6,7 @@ Semester 2, 2018
 """
 
 import random
+from os import system
 
 __author__ = "Your name & student number here"
 
@@ -14,7 +15,7 @@ __author__ = "Your name & student number here"
 
 def main():
     print("Please run gui.py instead")
-
+    system("python3 gui.py")
 
 if __name__ == "__main__":
     main()

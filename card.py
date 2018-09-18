@@ -1,4 +1,4 @@
-
+# import a2_support
 #Card   
 class Card:
     colour = {'red','blue','yellow','green','black'}
@@ -94,6 +94,17 @@ class SkipCard(SpecialCard):
         self.pickup_amount = False
         self.play = True
         count = 1
+
+    def __str__(self):
+        """Returns the string representation of this card."""
+
+
+        return 'SkipCard({},{})'.format(self.number, self.colour)
+
+        # __repr__ = __str__
+
+    def __repr__(self):
+        return 'SkipCard({},{})'.format(self.number, self.colour)
     
     
 
@@ -108,6 +119,17 @@ class ReverseCard(SpecialCard):
         self.play = True
         count = -1
 
+    def __str__(self):
+        """Returns the string representation of this card."""
+
+
+        return 'ReverseCard({},{})'.format(self.number, self.colour)
+
+        # __repr__ = __str__
+
+    def __repr__(self):
+        return 'ReverseCard({},{})'.format(self.number, self.colour)
+
    
 class Pickup2Card(SpecialCard):
     """A card which makes the next player pickup two cards.
@@ -120,6 +142,17 @@ class Pickup2Card(SpecialCard):
 
     def get_pickup_amount0(self):
         return 2
+
+    def __str__(self):
+        """Returns the string representation of this card."""
+
+
+        return 'Pickup2Card({},{})'.format(self.number, self.colour)
+
+        # __repr__ = __str__
+
+    def __repr__(self):
+        return 'Pickup2Card({},{})'.format(self.number, self.colour)
               
 
 class Pickup4Card(SpecialCard):
@@ -133,6 +166,17 @@ class Pickup4Card(SpecialCard):
 
     def get_pickup_amount(self):
         return 4
+
+    def __str__(self):
+        """Returns the string representation of this card."""
+
+
+        return 'Pickup4Card({},{})'.format(self.number, self.colour)
+
+        # __repr__ = __str__
+
+    def __repr__(self):
+        return 'Pickup4Card({},{})'.format(self.number, self.colour)
 
 #from a2_support
 class TurnManager:
