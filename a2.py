@@ -23,7 +23,7 @@ class Card:
     def __init__(self,number,colour):
         self.number = number
         self.colour = colour
-        self.pickup_amount = False
+        self.pickup_amount = 0
         self.attr = None
         self.__play = False
 
@@ -55,8 +55,8 @@ class Card:
 
     def get_pickup_amount(self):
         """Returns the amount of cards the next player should pickup"""
-        if  self.pickup_amount == False:
-            return 0      
+        # if  self.pickup_amount == False:
+        return self.pickup_amount
 
     def matches(self, card):
         """Determines if the next card to be placed on the pile
@@ -83,13 +83,26 @@ class Card:
             
             # self.attr == 2 means that the card is Pickup2Card
             elif self.attr == 2:
-                player.get_deck().add_cards(game.pickup_pile.pick(2))
+                # player.get_deck().add_cards(game.pickup_pile.pick(2))
+                game.next_player().get_deck().add_cards(game.pickup_pile.pick(2))
+                while True:
+                    name = game.current_player().get_name()
+                    if name == player.get_name():
+                        break
+                    else:
+                        game.next_player()
+
                 
             
             # self.attr == 4 means that the card is Pickup4Card
             elif self.attr == 4:
-                player.get_deck().add_cards(game.pickup_pile.pick(4))
-            
+                game.next_player().get_deck().add_cards(game.pickup_pile.pick(4))
+                while True:
+                    name = game.current_player().get_name()
+                    if name == player.get_name():
+                        break
+                    else:
+                        game.next_player()
 
 
         return self.play
@@ -117,7 +130,7 @@ class SkipCard(SpecialCard):
     def __init__(self,number,colour):                        
         self.number = number
         self.colour = colour
-        self.pickup_amount = False
+        self.pickup_amount = 0
         # self.play = True
         self.attr = 0
 
@@ -138,7 +151,7 @@ class ReverseCard(SpecialCard):
     def __init__(self,number,colour):                        
         self.number = number
         self.colour = colour
-        self.pickup_amount = False
+        self.pickup_amount = 0
         # self.play = True
         self.attr = -1
 
@@ -160,12 +173,12 @@ class Pickup2Card(SpecialCard):
     def __init__(self,number,colour):                        
         self.number = number
         self.colour = colour
-        self.pickup_amount = True
+        self.pickup_amount = 2
         # self.play = True
         self.attr = 2
 
-    def get_pickup_amount0(self):
-        return 2
+    # def get_pickup_amount(self):
+    #     return 2
 
     def __str__(self):
         """Returns the string representation of this card."""
@@ -185,16 +198,15 @@ class Pickup4Card(SpecialCard):
     def __init__(self,number,colour):
         self.number = number
         self.colour = colour
-        self.pickup_amount = True
+        self.pickup_amount = 4
         # self.play = True
         self.attr = 4
 
-    def get_pickup_amount(self):
-        return 4
+    # def get_pickup_amount(self):
+    #     return 4
 
     def __str__(self):
         """Returns the string representation of this card."""
-
 
         return 'Pickup4Card({},{})'.format(self.number, self.colour)
 
@@ -233,6 +245,7 @@ class Deck:
             #     i+=1
             for i in range(self.get_amount()-1,self.get_amount()-amount-1,-1):
                 cards.append(self.__deck[i])
+                del self.__deck[i]
         else:
             cards = [i for i in self.__deck]
             self.__deck.clear()
@@ -241,13 +254,13 @@ class Deck:
 
     def add_card(self,card:Card):
         """add single card"""
-        self.__deck.append(card)
+        self.__deck.append(copy.copy(card))
 
 
     def add_cards(self,cards:list):
         """add lots of cards"""
         for i in cards:
-            self.__deck.append(i)
+            self.__deck.append(copy.copy(i))
 
     def top(self):
         """return the top of the card of the deck"""
@@ -263,17 +276,22 @@ class Deck:
         else:
             return None
 
-    def remove(self,amount:int=1):
-        cards = []
-        if self.get_amount() > amount:
-            i = 0
-            while i < amount:
-                cards.append(self.__deck.pop())
-        else:
-            cards = [i for i in self.__deck]
-            self.__deck.clear()
+    # def remove(self,amount:int=1):
+    #     cards = []
+    #     if self.get_amount() > amount:
+    #         i = 0
+    #         # try:
+    #         print(len(self.__deck))
+    #         system("pause")
+    #         while i < amount:
+    #             cards.append(self.__deck.pop())
+    #         # except IndexError as p:
+    #         #     print(len(self.__deck))
+    #     else:
+    #         cards = [i for i in self.__deck]
+    #         self.__deck.clear()
 
-        return cards
+    #     return cards
     
 
 
@@ -329,6 +347,11 @@ class HumanPlayer(Player):
         return self.__name
     def pick_card(self,putdown_pile:Deck):
         return None
+    def has_won(self):
+        if self.__deck.get_amount() == 0:
+            return True
+        else: 
+            return False
     def __repr__(self):
         return "HumanPlayer({})".format(self.__name)
         
@@ -336,7 +359,7 @@ class HumanPlayer(Player):
 class ComputerPlayer(Player):
     def __init__(self,name):
         self.__deck = Deck()
-        self.__playable = False
+        self._playable = False
         # self.pick_card = True 
         self.__name = name
         self.attr = "ComputerPlayer"
@@ -345,16 +368,17 @@ class ComputerPlayer(Player):
         pile_card = putdown_pile.top()
         i = 0
         while i < self.__deck.get_amount():
-            card = self.__deck.pick(amount=1)
+            card = self.__deck.top()
             match = pile_card.matches(card)
             if match is True:
-                card = self.__deck.remove(amount=1)
+                card = self.__deck.pick(amount=1)
                 return card
             else:
                 self.__deck.shuffle()
 
         return None
-    
+    def is_playable(self):
+        return False
     def get_deck(self):
         return self.__deck
 
@@ -363,6 +387,12 @@ class ComputerPlayer(Player):
     
     def __repr__(self):
         return "ComputerPlayer({})".format(self.__name)
+    
+    def has_won(self):
+        if self.__deck.get_amount() == 0:
+            return True
+        else:
+            return False
 
 
 def main():

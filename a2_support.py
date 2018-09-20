@@ -202,6 +202,7 @@ class UnoGame:
         """
         card = player.pick_card(self.putdown_pile)
 
+        # if card is None means that player has no appropriate card to pick
         if card is None:
             player.get_deck().add_cards(self.pickup_pile.pick())
             return
