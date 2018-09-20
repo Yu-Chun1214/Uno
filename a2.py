@@ -213,9 +213,12 @@ class Pickup4Card(Card):
 
 
 class Deck:
-    def __init__(self,starting_cards:list):
+    def __init__(self,starting_cards=None):
         # import copy
-        self.__deck = starting_cards
+        if starting_cards is None:
+            self.__deck = list()
+        else:
+            self.__deck = starting_cards
 
     def get_cards(self):
         """return cards which are in deck"""
@@ -252,14 +255,14 @@ class Deck:
     def add_card(self,card:Card):
         """add single card"""
         # import copy
-        self.__deck.append(copy.copy(card))
+        self.__deck.append(card)
 
 
-    def add_cards(self,cards:list):
+    def add_cards(self,cards:list=list):
         """add lots of cards"""
         # import copy
         for i in cards:
-            self.__deck.append(copy.copy(i))
+            self.__deck.append(i)
 
     def top(self):
         """return the top of the card of the deck"""
@@ -327,7 +330,7 @@ class Player():
 
     def pick_card(self, putdown_pile:Deck):
         """ Selects a card to play from the players current deck."""
-        if self.attr is not None:
+        if self.attr is None:
             raise NotImplementedError("pick_card to be implemented by subclass") 
 
     
@@ -359,23 +362,23 @@ class ComputerPlayer(Player):
     def __init__(self,name):
         self.__deck = Deck()
         self._playable = False
-        # self.pick_card = True 
         self.__name = name
         self.attr = "ComputerPlayer"
+
     def pick_card(self,putdown_pile:Deck):
-        card = putdown_pile.top()
         pile_card = putdown_pile.top()
+
         i = 0
-        while i < self.__deck.get_amount():
+        while i <= self.__deck.get_amount():
             card = self.__deck.top()
             match = pile_card.matches(card)
-            if match is True:
-                card = self.__deck.pick(amount=1)
-                return card
+            if match:
+                return self.__deck.pick()[0]
             else:
                 self.__deck.shuffle()
-
+            i+=1
         return None
+
     def is_playable(self):
         return False
     def get_deck(self):

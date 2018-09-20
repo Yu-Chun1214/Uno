@@ -12,3 +12,4 @@ deck = Deck([Card(1,"red"), Card(2,"blue"),Card(3,"red"), Card(4,"green")])
 game = UnoGame(deck,players)
 
 print(game.take_turn(anna).get_name())
+

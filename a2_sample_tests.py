@@ -360,7 +360,7 @@ class TestDeck(OrderedTestCase):
 
         deck = a2.Deck(starting_cards=None)
         self.assertEqual(deck.get_cards(), [],
-                         "A Deck with no starting cards should be empty")
+                         "A Decks with no starting cards should be empty")
 
         deck1 = a2.Deck()
         deck2 = a2.Deck()

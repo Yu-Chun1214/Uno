@@ -21,7 +21,7 @@ from enum import Enum, unique
 from functools import wraps
 from types import FunctionType, ModuleType, TracebackType
 from typing import Callable, Dict, List, Optional, Tuple, Type, Union
-
+from os import system
 
 # GLOBALS TO EXCLUDE FILES IN TRACEBACK
 __TEST_RUNNER = True
@@ -883,6 +883,7 @@ class TestMaster:
 
     def run(self, test_cases: List[Union[TestCase, Type[TestCase]]]) -> TestResult:
         if not self._ignore_import_fails and self._import_errors:
+
             err_type, msg, err_msg = self._import_errors[0]
             if self._output_json:
                 data = dict(error=err_type, error_message=f'{msg}\n{err_msg}')
