@@ -83,15 +83,12 @@ class Card:
             
             # self.attr == 2 means that the card is Pickup2Card
             elif self.attr == 2:
-                print("in the play method the player's name is : ",player.get_name())
-                player.get_deck().add_cards([Card(1,"red"),Card(2,"red")])
-                print('-'*10)
+                player.get_deck().add_cards(game.pickup_pile.pick(2))
                 
             
             # self.attr == 4 means that the card is Pickup4Card
             elif self.attr == 4:
-                print("in the play method the player's name is : ",player.get_name)
-                player.deck.add_cards(game.pickup_pile.pick(4))
+                player.get_deck().add_cards(game.pickup_pile.pick(4))
             
 
 
