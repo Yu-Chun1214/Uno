@@ -1,5 +1,5 @@
 # import a2_support
-#Card   
+
 class Card:
     colour = {'red','blue','yellow','green','black'}
     number_ = {1, 2, 3, 4, 5, 6, 7, 8, 9}

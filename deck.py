@@ -33,8 +33,6 @@ class Deck:
 
         return cards
 
-
-
     def add_card(self,card:Card):
         """add single card"""
         self.__deck.append(card)

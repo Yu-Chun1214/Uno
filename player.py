@@ -34,16 +34,17 @@ class Player():
         else:
             return False
 
-    def pick_card(self, putdown_pile):
+    def pick_card(self, putdown_pile:Deck):
         """ Selects a card to play from the players current deck."""
-        if self.pick_card == True:
-            if self.matches == True:
-                self.deck.remove(card) #revomes the card
-        elif self.pick_card == False:
-            raise NotImplementedError
-            return None
-        elif self.matches == False:
-            return None
+        
+        # if self.pick_card == True:
+        #     if self.matches == True:
+        #         self.deck.remove(card) #revomes the card
+        # elif self.pick_card == False:
+        #     raise NotImplementedError
+        #     return None
+        # elif self.matches == False:
+        #     return None
         
 class HumanPlayer(Player):
     def __init__(self,name):
