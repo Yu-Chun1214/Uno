@@ -4,6 +4,11 @@
 
 python3 test.py
 
-# problem:
+## All Class are in a2.py
 
-ComputerPlayer的self.__deck跟HumanPlayer的self.__deck位置一樣
+You can test the code by importing
+
+like
+```python
+from a2 import Card,SkipCard,ReverseCard
+```

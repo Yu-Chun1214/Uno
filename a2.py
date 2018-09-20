@@ -6,6 +6,7 @@ Semester 2, 2018
 """
 
 import random
+import copy
 from os import system
 
 __author__ = "Your name & student number here"
@@ -207,8 +208,8 @@ class Pickup4Card(SpecialCard):
 
 
 class Deck:
-    def __init__(self,starting_cards=[]):
-        self.__deck = starting_cards
+    def __init__(self,starting_cards:list=[]):
+        self.__deck = copy.copy(starting_cards)
 
     def get_cards(self):
         """return cards which are in deck"""
