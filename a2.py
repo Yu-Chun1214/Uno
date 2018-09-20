@@ -70,18 +70,6 @@ class Card:
     def play(self, player, game):
         """Perform a special card action. The base Card
         class has no special action."""
-        self.player = player
-        # from a2_support import UnoGame
-        # game = UnoGame(player.get_deck(), player)
-        # self.player = player
-        # count = 0
-        # if self.play == True:
-        #     if self.count == 1:
-        #         self.__play = game.next_player()
-
-        #     elif self.count == -1:
-        #         self.__play = game.reverse()
-
 
         if self.attr != None:
             # self.attr == 0 means that the card is skipcard
@@ -94,10 +82,14 @@ class Card:
             
             # self.attr == 2 means that the card is Pickup2Card
             elif self.attr == 2:
-                player.deck.add_cards(game.pickup_pile.pick(2))
+                print("in the play method the player's name is : ",player.get_name())
+                player.get_deck().add_cards([Card(1,"red"),Card(2,"red")])
+                print('-'*10)
+                
             
             # self.attr == 4 means that the card is Pickup4Card
             elif self.attr == 4:
+                print("in the play method the player's name is : ",player.get_name)
                 player.deck.add_cards(game.pickup_pile.pick(4))
             
 
@@ -133,7 +125,6 @@ class SkipCard(SpecialCard):
 
     def __str__(self):
         """Returns the string representation of this card."""
-
 
         return 'SkipCard({},{})'.format(self.number, self.colour)
 
@@ -274,12 +265,26 @@ class Deck:
         else:
             return None
 
+    def remove(self,amount:int=1):
+        cards = []
+        if self.get_amount() > amount:
+            i = 0
+            while i < amount:
+                cards.append(self.__deck.pop())
+        else:
+            cards = [i for i in self.__deck]
+            self.__deck.clear()
+
+        return cards
+    
+
 
 class Player():
     def __init__(self,name):
-        self.deck = Deck()
+        self.__deck = Deck()
         self.__name = name
         self._playable = False
+        self.attr = None
         
 
     def get_name(self):
@@ -288,65 +293,73 @@ class Player():
 
     def get_deck(self):
         """Returns the players deck of cards."""
-        return self.deck
+        return self.__deck
 
     def is_playable(self):
         """Returns True if the players moves aren't automatic."""
-        if self._playable == True:
-            raise NotImplementedError
+        if self._playable == False:
+            raise NotImplementedError("is_playable to be implemented by subclasses")
         return self._playable
        
     def has_won(self):
         """Returns True if the player has an
         empty deck and has therefore won.
         """
-        if self.deck.get_amount() == 0:
+        if self.__deck.get_amount() == 0:
             return True
         else:
             return False
 
     def pick_card(self, putdown_pile:Deck):
         """ Selects a card to play from the players current deck."""
-        pile_card = putdown_pile.top()
-        i = 0
-        while i < self.deck.get_amount():
-            card = self.deck.bottom()
-            match = pile_card.matches(card)
-            if match is True:
-                return self.deck.pick(amount=1)
-            else:
-                self.deck.shuffle()
-        
-        # if self.pick_card == True:
-        #     if self.matches == True:
-        #         self.deck.remove(card) #revomes the card
-        # elif self.pick_card == False:
-        #     raise NotImplementedError
-        #     return None
-        # elif self.matches == False:
-        #     return None
+        if self.attr is not None:
+            raise NotImplementedError("pick_card to be implemented by subclass") 
+
     
 
 
 class HumanPlayer(Player):
     def __init__(self,name):
-        self.deck = Deck()
+        self.__deck = Deck()
         self._playable = True
-        self.pick_card = False
+        # self.pick_card = False
         self.__name = name
+        self.attr = "HumanPlayer"
+    def get_deck(self):
+        return self.__deck
     def get_name(self):
         return self.__name
-    
+    def pick_card(self,putdown_pile:Deck):
+        return None
     def __repr__(self):
         return "HumanPlayer({})".format(self.__name)
         
 
 class ComputerPlayer(Player):
     def __init__(self,name):
-        self.deck = Deck()
+        self.__deck = Deck()
         self.__playable = False
-        self.pick_card = True 
+        # self.pick_card = True 
         self.__name = name
+        self.attr = "ComputerPlayer"
+    def pick_card(self,putdown_pile:Deck):
+        card = putdown_pile.top()
+        pile_card = putdown_pile.top()
+        i = 0
+        while i < self.__deck.get_amount():
+            card = self.__deck.pick(amount=1)
+            match = pile_card.matches(card)
+            if match is True:
+                card = self.__deck.remove(amount=1)
+                return card
+            else:
+                self.__deck.shuffle()
+
+        return None
+    
+    def get_deck(self):
+        return self.__deck
+
     def get_name(self):
         return self.__name
     

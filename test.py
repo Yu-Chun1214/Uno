@@ -13,42 +13,59 @@ cards = [card,special_card,blue_card]
 new_card = SkipCard(0,"green")
 
 deck = Deck(cards)
+anna = ComputerPlayer("Anna")
+players = [anna,HumanPlayer("Henry"),ComputerPlayer("john")]
 
 
-print("deck.get_cards()")
-print(deck.get_cards())
-print('-'*10,end="\n\n")
+game = a2_support.UnoGame(deck,players)
 
-print("deck.get_amount()")
-print(deck.get_amount())
-print('-'*10,end="\n\n")
+for i in game.players:
+    print(i.get_name())
+    print(i.get_deck().get_cards())
 
-print("deck.top()")
-print(deck.top())
-print('-'*10,end="\n\n")
+special_card.play(anna,game)
 
-deck.add_card(new_card)
-deck.add_cards([card,special_card,blue_card])
-print("deck.get_amount()")
-print(deck.get_amount())
-print('-'*10,end="\n\n")
+for i in game.players:
+    print(i)
+    print(i.get_name())
+    print(i.get_deck().get_cards())
+    print(id(i.get_deck().get_cards()))
 
-print("deck.get_cards()")
-print(deck.get_cards())
-print('-'*10,end="\n\n")
 
-print('deck.pick()')
-print(deck.pick())
-print('-'*10,end="\n\n")
+# print("deck.get_cards()")
+# print(deck.get_cards())
+# print('-'*10,end="\n\n")
 
-print("deck.pick(amount=2)")
-print(deck.pick(amount=2))
-print('-'*10,end="\n\n")
+# print("deck.get_amount()")
+# print(deck.get_amount())
+# print('-'*10,end="\n\n")
 
-print("deck.shuffle(),deck,getCard()")
-deck.shuffle()
-print(deck.get_cards())
-print('-'*10,end="\n\n")
+# print("deck.top()")
+# print(deck.top())
+# print('-'*10,end="\n\n")
+
+# deck.add_card(new_card)
+# deck.add_cards([card,special_card,blue_card])
+# print("deck.get_amount()")
+# print(deck.get_amount())
+# print('-'*10,end="\n\n")
+
+# print("deck.get_cards()")
+# print(deck.get_cards())
+# print('-'*10,end="\n\n")
+
+# print('deck.pick()')
+# print(deck.pick())
+# print('-'*10,end="\n\n")
+
+# print("deck.pick(amount=2)")
+# print(deck.pick(amount=2))
+# print('-'*10,end="\n\n")
+
+# print("deck.shuffle(),deck,getCard()")
+# deck.shuffle()
+# print(deck.get_cards())
+# print('-'*10,end="\n\n")
 
 # class test:
 #     def __init__(self):
@@ -64,17 +81,14 @@ print('-'*10,end="\n\n")
 
 # print(t.play)
 
-anna = ComputerPlayer("Anna")
+# anna = ComputerPlayer("Anna")
 
-players = [anna,HumanPlayer("Henry"),ComputerPlayer("john")]
-deck = Deck([Card(1,"red"),Card(2,"blue"),Card(3,"red"),Card(4,"green")])
+# players = [anna,HumanPlayer("Henry"),ComputerPlayer("john")]
+# deck = Deck([Card(1,"red"),Card(2,"blue"),Card(3,"red"),Card(4,"green")])
 # print("deck, ",deck.get_cards())
-game = a2_support.UnoGame(deck,players)
+# game = a2_support.UnoGame(deck,players)
 # print(game.pickup_pile.get_cards())
 # print(game)
-
-card = Pickup4Card(0,"red")
-
 # print(game.current_player().get_name())
 # print(game.next_player().get_name())
 # print(game.next_player().get_name())
@@ -95,9 +109,9 @@ card = Pickup4Card(0,"red")
 # print(game.players)
 # print(game.current_player().get_name())
 
-print(game.pickup_pile.get_cards())
-print(game.next_player().get_deck().get_cards())
+# print(game.pickup_pile.get_cards())
+# print(game.next_player().get_deck().get_cards())
 
-card.play(anna,game)
+# card.play(anna,game)
 
-print(game.next_player().get_deck().get_cards())
+# print(game.next_player().get_deck().get_cards())
