@@ -6,13 +6,13 @@ Semester 2, 2018
 """
 
 import random
-import copy
-from os import system
+# import copy
+# from os import system
 
 __author__ = "Your name & student number here"
 
 # Write your classes here
-
+# import copy
 # import a2_support
 
 class Card:
@@ -41,16 +41,7 @@ class Card:
             
     def set_colour(self,colour):
         """Set the colour of the card"""
-        if colour == 'blue':
-            self.colour = 'blue'
-        elif colour == 'red':
-            self.colour == 'red'
-        elif colour == 'yellow':
-            self.colour == 'yellow'
-        elif colour == 'green':
-            self.colour == 'green'
-        elif colour == 'black':
-            self.colour == 'black'
+        self.colour = colour
 
 
     def get_pickup_amount(self):
@@ -109,43 +100,39 @@ class Card:
         
     def __str__(self):
         """Returns the string representation of this card."""
-        return 'Card({},{})'.format(self.number, self.colour)
+        return 'Card({}, {})'.format(self.number,self.colour)
 
         # __repr__ = __str__
 
     def __repr__(self):
-        return 'Card({},{})'.format(self.number, self.colour)
+        return 'Card({}, {})'.format(self.number, self.colour)
 
-# It can be inherited by special card like SkipCard,ReverseCard,etc...
-class SpecialCard(Card):
-    def matches(self,card):
-        if self.colour == card.colour:
-            return True
-        else:
-            return False
 
-class SkipCard(SpecialCard):
+class SkipCard(Card):
     """A card which skips the turn of the next player.
     Matches with cards of the same colour."""
     def __init__(self,number,colour):                        
         self.number = number
         self.colour = colour
         self.pickup_amount = 0
-        # self.play = True
         self.attr = 0
 
     def __str__(self):
         """Returns the string representation of this card."""
 
-        return 'SkipCard({},{})'.format(self.number, self.colour)
+        return 'SkipCard({}, {})'.format(self.number, self.colour)
 
         # __repr__ = __str__
-
+    def matches(self,card):
+        if self.colour  == card.colour:
+            return True
+        else:
+            return False
     def __repr__(self):
-        return 'SkipCard({},{})'.format(self.number, self.colour)
+        return 'SkipCard({}, {})'.format(self.number, self.colour)
     
 
-class ReverseCard(SpecialCard):
+class ReverseCard(Card):
     """A card which skips the turn of the next player.
     Matches with cards of the same colour."""
     def __init__(self,number,colour):                        
@@ -159,15 +146,19 @@ class ReverseCard(SpecialCard):
         """Returns the string representation of this card."""
 
 
-        return 'ReverseCard({},{})'.format(self.number, self.colour)
+        return 'ReverseCard({}, {})'.format(self.number, self.colour)
 
         # __repr__ = __str__
-
+    def matches(self,card):
+        if self.colour  == card.colour:
+            return True
+        else:
+            return False
     def __repr__(self):
-        return 'ReverseCard({},{})'.format(self.number, self.colour)
+        return 'ReverseCard({}, {})'.format(self.number, self.colour)
 
    
-class Pickup2Card(SpecialCard):
+class Pickup2Card(Card):
     """A card which makes the next player pickup two cards.
     Matches with cards of the same colour."""
     def __init__(self,number,colour):                        
@@ -184,15 +175,19 @@ class Pickup2Card(SpecialCard):
         """Returns the string representation of this card."""
 
 
-        return 'Pickup2Card({},{})'.format(self.number, self.colour)
+        return 'Pickup2Card({}, {})'.format(self.number, self.colour)
 
         # __repr__ = __str__
-
+    def matches(self,card):
+        if self.colour  == card.colour:
+            return True
+        else:
+            return False
     def __repr__(self):
-        return 'Pickup2Card({},{})'.format(self.number, self.colour)
+        return 'Pickup2Card({}, {})'.format(self.number, self.colour)
               
 
-class Pickup4Card(SpecialCard):
+class Pickup4Card(Card):
     """A card which makes the next player pickup four cards.
     Matches with any card."""
     def __init__(self,number,colour):
@@ -208,17 +203,19 @@ class Pickup4Card(SpecialCard):
     def __str__(self):
         """Returns the string representation of this card."""
 
-        return 'Pickup4Card({},{})'.format(self.number, self.colour)
+        return 'Pickup4Card({}, {})'.format(self.number, self.colour)
 
         # __repr__ = __str__
-
+    def matches(self,card):
+        return True
     def __repr__(self):
-        return 'Pickup4Card({},{})'.format(self.number, self.colour)
+        return 'Pickup4Card({}, {})'.format(self.number, self.colour)
 
 
 class Deck:
-    def __init__(self,starting_cards:list=[]):
-        self.__deck = copy.copy(starting_cards)
+    def __init__(self,starting_cards:list):
+        # import copy
+        self.__deck = starting_cards
 
     def get_cards(self):
         """return cards which are in deck"""
@@ -254,11 +251,13 @@ class Deck:
 
     def add_card(self,card:Card):
         """add single card"""
+        # import copy
         self.__deck.append(copy.copy(card))
 
 
     def add_cards(self,cards:list):
         """add lots of cards"""
+        # import copy
         for i in cards:
             self.__deck.append(copy.copy(i))
 
@@ -397,7 +396,7 @@ class ComputerPlayer(Player):
 
 def main():
     print("Please run gui.py instead")
-    system("python3 gui.py")
+    # system("python3 gui.py")
 
 
 

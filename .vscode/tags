@@ -1,0 +1,484 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AI_DELAY	../gui.py	/^AI_DELAY = 2000$/;"	kind:variable	line:27
+AttributeGuesser	../testrunner.py	/^class AttributeGuesser:$/;"	kind:class	line:287
+BLOCK_WIDTH	../testrunner.py	/^BLOCK_WIDTH = 80$/;"	kind:variable	line:41
+Bdb	../testrunner.py	/^from bdb import Bdb$/;"	kind:namespace	line:18
+CARD_BACK_BACKGROUND	../gui.py	/^CARD_BACK_BACKGROUND = "black"$/;"	kind:variable	line:22
+CARD_BACK_FOREGROUND	../gui.py	/^CARD_BACK_FOREGROUND = "red"$/;"	kind:variable	line:23
+CARD_BACK_TEXT	../gui.py	/^CARD_BACK_TEXT = "UNO++"$/;"	kind:variable	line:25
+CARD_BACK_TEXT_COLOUR	../gui.py	/^CARD_BACK_TEXT_COLOUR = "yellow"$/;"	kind:variable	line:24
+CARD_CLASS	../a2_sample_tests.py	/^CARD_CLASS = {$/;"	kind:variable	line:17
+CARD_HEIGHT	../gui.py	/^CARD_HEIGHT = 100$/;"	kind:variable	line:17
+CARD_ICONS	../gui.py	/^CARD_ICONS = {$/;"	kind:variable	line:133
+CARD_OVAL_COLOUR	../gui.py	/^CARD_OVAL_COLOUR = "#fceee3"$/;"	kind:variable	line:21
+CARD_PICKUP_AMOUNTS	../a2_sample_tests.py	/^CARD_PICKUP_AMOUNTS = {$/;"	kind:variable	line:37
+CARD_SPACE	../gui.py	/^CARD_SPACE = 10$/;"	kind:variable	line:19
+CARD_SUBCLASSES	../a2_sample_tests.py	/^CARD_SUBCLASSES = [$/;"	kind:variable	line:30
+CARD_VIEWS	../gui.py	/^CARD_VIEWS = {$/;"	kind:variable	line:194
+CARD_WIDTH	../gui.py	/^CARD_WIDTH = 75$/;"	kind:variable	line:18
+CachedIO	../testrunner.py	/^class CachedIO(io.StringIO):$/;"	kind:class	line:167
+Callable	../testrunner.py	/^from typing import Callable, Dict, List, Optional, Tuple, Type, Union$/;"	kind:namespace	line:23
+Card	../a2.py	/^class Card:$/;"	kind:class	line:18
+Card	../a2_support.py	/^from a2 import Card, SkipCard, ReverseCard, Pickup2Card, Pickup4Card$/;"	kind:namespace	line:8
+Card	../card.py	/^class Card:$/;"	kind:class	line:3
+Card	../deck.py	/^from card import Card$/;"	kind:namespace	line:1
+Card	../test.py	/^from a2 import Card,SkipCard,ReverseCard,Pickup2Card,Pickup4Card$/;"	kind:namespace	line:2
+Card	../test4.py	/^from a2 import Card,SkipCard,ReverseCard,Pickup2Card,Pickup4Card$/;"	kind:namespace	line:4
+CardColour	../a2_support.py	/^class CardColour(Enum):$/;"	kind:class	line:15
+CardView	../gui.py	/^class CardView:$/;"	kind:class	line:30
+ComputerPlayer	../a2.py	/^class ComputerPlayer(Player):$/;"	kind:class	line:352
+ComputerPlayer	../gui.py	/^from a2 import HumanPlayer, ComputerPlayer, Deck$/;"	kind:namespace	line:9
+ComputerPlayer	../player.py	/^class ComputerPlayer(Player):$/;"	kind:class	line:55
+ComputerPlayer	../test.py	/^from a2 import Player,ComputerPlayer,HumanPlayer,Deck$/;"	kind:namespace	line:3
+ComputerPlayer	../test4.py	/^from a2 import Player,ComputerPlayer,HumanPlayer$/;"	kind:namespace	line:7
+DECK_CLASS	../a2_sample_tests.py	/^DECK_CLASS = {$/;"	kind:variable	line:45
+DEFAULT_TIMEOUT	../testrunner.py	/^DEFAULT_TIMEOUT = 0$/;"	kind:variable	line:34
+DIFF_OMITTED	../testrunner.py	/^DIFF_OMITTED = '\\nDiff is {} characters long. Set TestMaster(max_diff=None) to see it.'$/;"	kind:variable	line:38
+DUPLICATE_MSG	../testrunner.py	/^DUPLICATE_MSG = 'AS ABOVE'$/;"	kind:variable	line:39
+Deck	../a2.py	/^class Deck:$/;"	kind:class	line:209
+Deck	../a2_support.py	/^from a2 import Deck$/;"	kind:namespace	line:9
+Deck	../deck.py	/^class Deck:$/;"	kind:class	line:4
+Deck	../gui.py	/^from a2 import HumanPlayer, ComputerPlayer, Deck$/;"	kind:namespace	line:9
+Deck	../player.py	/^from deck import Deck$/;"	kind:namespace	line:2
+Deck	../test.py	/^from a2 import Player,ComputerPlayer,HumanPlayer,Deck$/;"	kind:namespace	line:3
+Deck	../test4.py	/^from a2 import Deck$/;"	kind:namespace	line:10
+DeckView	../gui.py	/^class DeckView(tk.Canvas):$/;"	kind:class	line:202
+Dict	../testrunner.py	/^from typing import Callable, Dict, List, Optional, Tuple, Type, Union$/;"	kind:namespace	line:23
+Enum	../a2_support.py	/^from enum import Enum$/;"	kind:namespace	line:6
+Enum	../testrunner.py	/^from enum import Enum, unique$/;"	kind:namespace	line:20
+FAIL	../testrunner.py	/^    FAIL = '-'$/;"	kind:variable	line:163
+FULL_DECK	../a2_support.py	/^FULL_DECK = [$/;"	kind:variable	line:26
+FULL_DECK	../gui.py	/^from a2_support import FULL_DECK, build_deck, UnoGame, generate_name$/;"	kind:namespace	line:11
+FunctionType	../testrunner.py	/^from types import FunctionType, ModuleType, TracebackType$/;"	kind:namespace	line:22
+HumanPlayer	../a2.py	/^class HumanPlayer(Player):$/;"	kind:class	line:330
+HumanPlayer	../gui.py	/^from a2 import HumanPlayer, ComputerPlayer, Deck$/;"	kind:namespace	line:9
+HumanPlayer	../player.py	/^class HumanPlayer(Player):$/;"	kind:class	line:49
+HumanPlayer	../test.py	/^from a2 import Player,ComputerPlayer,HumanPlayer,Deck$/;"	kind:namespace	line:3
+HumanPlayer	../test4.py	/^from a2 import Player,ComputerPlayer,HumanPlayer$/;"	kind:namespace	line:7
+IconCardView	../gui.py	/^class IconCardView(CardView):$/;"	kind:class	line:139
+List	../testrunner.py	/^from typing import Callable, Dict, List, Optional, Tuple, Type, Union$/;"	kind:namespace	line:23
+ModuleType	../testrunner.py	/^from types import FunctionType, ModuleType, TracebackType$/;"	kind:namespace	line:22
+Optional	../testrunner.py	/^from typing import Callable, Dict, List, Optional, Tuple, Type, Union$/;"	kind:namespace	line:23
+OrderedDict	../testrunner.py	/^from collections import OrderedDict$/;"	kind:namespace	line:19
+OrderedTestCase	../a2_sample_tests.py	/^from testrunner import OrderedTestCase, TestMaster$/;"	kind:namespace	line:10
+OrderedTestCase	../testrunner.py	/^class OrderedTestCase(TestCase):$/;"	kind:class	line:557
+PLAYER_CLASS	../a2_sample_tests.py	/^PLAYER_CLASS = {$/;"	kind:variable	line:58
+PLAYER_SUBCLASSES	../a2_sample_tests.py	/^PLAYER_SUBCLASSES = [$/;"	kind:variable	line:67
+Pickup2Card	../a2.py	/^class Pickup2Card(Card):$/;"	kind:class	line:159
+Pickup2Card	../a2_support.py	/^from a2 import Card, SkipCard, ReverseCard, Pickup2Card, Pickup4Card$/;"	kind:namespace	line:8
+Pickup2Card	../card.py	/^class Pickup2Card(SpecialCard):$/;"	kind:class	line:134
+Pickup2Card	../gui.py	/^from a2 import SkipCard, ReverseCard, Pickup2Card, Pickup4Card$/;"	kind:namespace	line:10
+Pickup2Card	../test.py	/^from a2 import Card,SkipCard,ReverseCard,Pickup2Card,Pickup4Card$/;"	kind:namespace	line:2
+Pickup2Card	../test4.py	/^from a2 import Card,SkipCard,ReverseCard,Pickup2Card,Pickup4Card$/;"	kind:namespace	line:4
+Pickup4Card	../a2.py	/^class Pickup4Card(Card):$/;"	kind:class	line:185
+Pickup4Card	../a2_support.py	/^from a2 import Card, SkipCard, ReverseCard, Pickup2Card, Pickup4Card$/;"	kind:namespace	line:8
+Pickup4Card	../card.py	/^class Pickup4Card(SpecialCard):$/;"	kind:class	line:158
+Pickup4Card	../gui.py	/^from a2 import SkipCard, ReverseCard, Pickup2Card, Pickup4Card$/;"	kind:namespace	line:10
+Pickup4Card	../test.py	/^from a2 import Card,SkipCard,ReverseCard,Pickup2Card,Pickup4Card$/;"	kind:namespace	line:2
+Pickup4Card	../test4.py	/^from a2 import Card,SkipCard,ReverseCard,Pickup2Card,Pickup4Card$/;"	kind:namespace	line:4
+PickupCardView	../gui.py	/^class PickupCardView(CardView):$/;"	kind:class	line:175
+Player	../a2.py	/^class Player():$/;"	kind:class	line:291
+Player	../player.py	/^class Player():$/;"	kind:class	line:5
+Player	../test.py	/^from a2 import Player,ComputerPlayer,HumanPlayer,Deck$/;"	kind:namespace	line:3
+Player	../test4.py	/^from a2 import Player,ComputerPlayer,HumanPlayer$/;"	kind:namespace	line:7
+RecursionDetector	../testrunner.py	/^class RecursionDetector(Bdb):$/;"	kind:class	line:269
+RedirectStdIO	../testrunner.py	/^class RedirectStdIO:$/;"	kind:class	line:190
+ReverseCard	../a2.py	/^class ReverseCard(Card):$/;"	kind:class	line:135
+ReverseCard	../a2_support.py	/^from a2 import Card, SkipCard, ReverseCard, Pickup2Card, Pickup4Card$/;"	kind:namespace	line:8
+ReverseCard	../card.py	/^class ReverseCard(SpecialCard):$/;"	kind:class	line:112
+ReverseCard	../gui.py	/^from a2 import SkipCard, ReverseCard, Pickup2Card, Pickup4Card$/;"	kind:namespace	line:10
+ReverseCard	../test.py	/^from a2 import Card,SkipCard,ReverseCard,Pickup2Card,Pickup4Card$/;"	kind:namespace	line:2
+ReverseCard	../test4.py	/^from a2 import Card,SkipCard,ReverseCard,Pickup2Card,Pickup4Card$/;"	kind:namespace	line:4
+SKIP	../testrunner.py	/^    SKIP = '?'$/;"	kind:variable	line:164
+SPECIAL_CARDS	../a2_support.py	/^SPECIAL_CARDS = [Pickup4Card]$/;"	kind:variable	line:58
+SUCCESS	../testrunner.py	/^    SUCCESS = '+'$/;"	kind:variable	line:162
+SkipCard	../a2.py	/^class SkipCard(Card):$/;"	kind:class	line:113
+SkipCard	../a2_support.py	/^from a2 import Card, SkipCard, ReverseCard, Pickup2Card, Pickup4Card$/;"	kind:namespace	line:8
+SkipCard	../card.py	/^class SkipCard(SpecialCard):$/;"	kind:class	line:88
+SkipCard	../gui.py	/^from a2 import SkipCard, ReverseCard, Pickup2Card, Pickup4Card$/;"	kind:namespace	line:10
+SkipCard	../test.py	/^from a2 import Card,SkipCard,ReverseCard,Pickup2Card,Pickup4Card$/;"	kind:namespace	line:2
+SkipCard	../test4.py	/^from a2 import Card,SkipCard,ReverseCard,Pickup2Card,Pickup4Card$/;"	kind:namespace	line:4
+SpecialCard	../card.py	/^class SpecialCard(Card):$/;"	kind:class	line:81
+TAB_SIZE	../testrunner.py	/^TAB_SIZE = 4$/;"	kind:variable	line:40
+TestCard	../a2_sample_tests.py	/^class TestCard(OrderedTestCase):$/;"	kind:class	line:147
+TestCase	../testrunner.py	/^class TestCase(unittest.TestCase, metaclass=_TestCaseMeta):$/;"	kind:class	line:426
+TestDeck	../a2_sample_tests.py	/^class TestDeck(OrderedTestCase):$/;"	kind:class	line:355
+TestDesign	../a2_sample_tests.py	/^class TestDesign(OrderedTestCase):$/;"	kind:class	line:73
+TestGameplay	../a2_sample_tests.py	/^class TestGameplay(OrderedTestCase):$/;"	kind:class	line:247
+TestLoader	../testrunner.py	/^class TestLoader(unittest.TestLoader):$/;"	kind:class	line:336
+TestMaster	../a2_sample_tests.py	/^from testrunner import OrderedTestCase, TestMaster$/;"	kind:namespace	line:10
+TestMaster	../testrunner.py	/^class TestMaster:$/;"	kind:class	line:698
+TestNoPrint	../testrunner.py	/^class TestNoPrint(TestCase):$/;"	kind:class	line:688
+TestOutcome	../testrunner.py	/^class TestOutcome(Enum):$/;"	kind:class	line:161
+TestPlayer	../a2_sample_tests.py	/^class TestPlayer(OrderedTestCase):$/;"	kind:class	line:474
+TestResult	../testrunner.py	/^class TestResult(unittest.TestResult):$/;"	kind:class	line:565
+TracebackType	../testrunner.py	/^from types import FunctionType, ModuleType, TracebackType$/;"	kind:namespace	line:22
+Tuple	../testrunner.py	/^from typing import Callable, Dict, List, Optional, Tuple, Type, Union$/;"	kind:namespace	line:23
+TurnManager	../a2_support.py	/^class TurnManager:$/;"	kind:class	line:61
+TurnManager	../card.py	/^class TurnManager:$/;"	kind:class	line:182
+TurnManager	../test.py	/^from a2_support import UnoGame,TurnManager$/;"	kind:namespace	line:1
+Type	../testrunner.py	/^from typing import Callable, Dict, List, Optional, Tuple, Type, Union$/;"	kind:namespace	line:23
+Union	../testrunner.py	/^from typing import Callable, Dict, List, Optional, Tuple, Type, Union$/;"	kind:namespace	line:23
+UnoApp	../gui.py	/^class UnoApp:$/;"	kind:class	line:346
+UnoGame	../a2_support.py	/^class UnoGame:$/;"	kind:class	line:122
+UnoGame	../gui.py	/^from a2_support import FULL_DECK, build_deck, UnoGame, generate_name$/;"	kind:namespace	line:11
+UnoGame	../test.py	/^from a2_support import UnoGame,TurnManager$/;"	kind:namespace	line:1
+UnoGame	../test4.py	/^from a2_support import UnoGame$/;"	kind:namespace	line:13
+_TestCaseMeta	../testrunner.py	/^class _TestCaseMeta(type):$/;"	kind:class	line:363
+_TimeoutThread	../testrunner.py	/^class _TimeoutThread(threading.Thread):$/;"	kind:class	line:385
+__TEST_RUNNER	../testrunner.py	/^__TEST_RUNNER = True$/;"	kind:variable	line:27
+__all__	../testrunner.py	/^__all__ = ['AttributeGuesser', 'OrderedTestCase', 'RedirectStdIO', 'TestCase', 'TestMaster',$/;"	kind:variable	line:30
+__author__	../a2.py	/^__author__ = "Your name & student number here"$/;"	kind:variable	line:12
+__author__	../a2_sample_tests.py	/^__author__ = 'Brae Webb and Benjamin Martin'$/;"	kind:variable	line:6
+__author__	../a2_support.py	/^__author__ = "Brae Webb"$/;"	kind:variable	line:11
+__author__	../gui.py	/^__author__ = "Brae Webb"$/;"	kind:variable	line:13
+__author__	../testrunner.py	/^__author__ = 'Steven Summers'$/;"	kind:variable	line:1
+__enter__	../testrunner.py	/^    def __enter__(self):$/;"	kind:member	line:221
+__exit__	../testrunner.py	/^    def __exit__(self, exc_type, exc_val, exc_tb):$/;"	kind:member	line:233
+__getattr__	../testrunner.py	/^    def __getattr__(cls, item):$/;"	kind:member	line:379
+__getattr__	../testrunner.py	/^    def __getattr__(self, item):$/;"	kind:member	line:438
+__getattr__	../testrunner.py	/^    def __getattr__(self, item: str):$/;"	kind:member	line:317
+__getattribute__	../testrunner.py	/^    def __getattribute__(self, item):$/;"	kind:member	line:311
+__guess_attribute	../testrunner.py	/^    def __guess_attribute(self, obj, name: str):$/;"	kind:member	line:301
+__init__	../a2.py	/^    def __init__(self,name):$/;"	kind:member	line:292
+__init__	../a2.py	/^    def __init__(self,name):$/;"	kind:member	line:331
+__init__	../a2.py	/^    def __init__(self,name):$/;"	kind:member	line:353
+__init__	../a2.py	/^    def __init__(self,number,colour):                        $/;"	kind:member	line:116
+__init__	../a2.py	/^    def __init__(self,number,colour):                        $/;"	kind:member	line:138
+__init__	../a2.py	/^    def __init__(self,number,colour):                        $/;"	kind:member	line:162
+__init__	../a2.py	/^    def __init__(self,number,colour):$/;"	kind:member	line:188
+__init__	../a2.py	/^    def __init__(self,number,colour):$/;"	kind:member	line:23
+__init__	../a2.py	/^    def __init__(self,starting_cards:list=[]):$/;"	kind:member	line:210
+__init__	../a2_support.py	/^    def __init__(self, deck, players):$/;"	kind:member	line:126
+__init__	../a2_support.py	/^    def __init__(self, players):$/;"	kind:member	line:65
+__init__	../card.py	/^    def __init__(self, players):$/;"	kind:member	line:186
+__init__	../card.py	/^    def __init__(self,number,colour):                        $/;"	kind:member	line:115
+__init__	../card.py	/^    def __init__(self,number,colour):                        $/;"	kind:member	line:137
+__init__	../card.py	/^    def __init__(self,number,colour):                        $/;"	kind:member	line:91
+__init__	../card.py	/^    def __init__(self,number,colour):$/;"	kind:member	line:161
+__init__	../card.py	/^    def __init__(self,number,colour):$/;"	kind:member	line:8
+__init__	../deck.py	/^    def __init__(self,starting_cards=None):$/;"	kind:member	line:5
+__init__	../gui.py	/^    def __init__(self, canvas, left_side, oval_colour=CARD_OVAL_COLOUR,$/;"	kind:member	line:35
+__init__	../gui.py	/^    def __init__(self, master, game, board_colour="#F9B05A"):$/;"	kind:member	line:349
+__init__	../gui.py	/^    def __init__(self, master, pick_card=None, border_colour="#6D4C41",$/;"	kind:member	line:207
+__init__	../player.py	/^    def __init__(self,name):$/;"	kind:member	line:50
+__init__	../player.py	/^    def __init__(self,name):$/;"	kind:member	line:56
+__init__	../player.py	/^    def __init__(self,name):$/;"	kind:member	line:6
+__init__	../testrunner.py	/^    def __init__(self, *args):$/;"	kind:member	line:273
+__init__	../testrunner.py	/^    def __init__(self, *args, **kwargs):$/;"	kind:member	line:391
+__init__	../testrunner.py	/^    def __init__(self, *args, **kwargs):$/;"	kind:member	line:434
+__init__	../testrunner.py	/^    def __init__(self, obj, fail: bool = True):$/;"	kind:member	line:294
+__init__	../testrunner.py	/^    def __init__(self, stdin: bool = False, stdout: bool = False,$/;"	kind:member	line:203
+__init__	../testrunner.py	/^    def __init__(self, stdio: RedirectStdIO):$/;"	kind:member	line:689
+__init__	../testrunner.py	/^    def __init__(self, stream):$/;"	kind:member	line:170
+__init__	../testrunner.py	/^    def __init__(self, stream=None, descriptions=None, verbosity=None):$/;"	kind:member	line:570
+__init__	../testrunner.py	/^    def __init__(self,$/;"	kind:member	line:712
+__new__	../testrunner.py	/^    def __new__(cls, name, bases, classdict):$/;"	kind:member	line:368
+__repr__	../a2.py	/^    def __repr__(self):$/;"	kind:member	line:107
+__repr__	../a2.py	/^    def __repr__(self):$/;"	kind:member	line:131
+__repr__	../a2.py	/^    def __repr__(self):$/;"	kind:member	line:155
+__repr__	../a2.py	/^    def __repr__(self):$/;"	kind:member	line:181
+__repr__	../a2.py	/^    def __repr__(self):$/;"	kind:member	line:205
+__repr__	../a2.py	/^    def __repr__(self):$/;"	kind:member	line:348
+__repr__	../a2.py	/^    def __repr__(self):$/;"	kind:member	line:381
+__repr__	../card.py	/^    def __repr__(self):$/;"	kind:member	line:106
+__repr__	../card.py	/^    def __repr__(self):$/;"	kind:member	line:130
+__repr__	../card.py	/^    def __repr__(self):$/;"	kind:member	line:154
+__repr__	../card.py	/^    def __repr__(self):$/;"	kind:member	line:178
+__repr__	../card.py	/^    def __repr__(self):$/;"	kind:member	line:76
+__repr__	../testrunner.py	/^    def __repr__(self):$/;"	kind:member	line:332
+__setattr__	../testrunner.py	/^    def __setattr__(self, name, value):$/;"	kind:member	line:326
+__str__	../a2.py	/^    def __str__(self):$/;"	kind:member	line:101
+__str__	../a2.py	/^    def __str__(self):$/;"	kind:member	line:122
+__str__	../a2.py	/^    def __str__(self):$/;"	kind:member	line:145
+__str__	../a2.py	/^    def __str__(self):$/;"	kind:member	line:172
+__str__	../a2.py	/^    def __str__(self):$/;"	kind:member	line:198
+__str__	../card.py	/^    def __str__(self):$/;"	kind:member	line:122
+__str__	../card.py	/^    def __str__(self):$/;"	kind:member	line:146
+__str__	../card.py	/^    def __str__(self):$/;"	kind:member	line:170
+__str__	../card.py	/^    def __str__(self):$/;"	kind:member	line:68
+__str__	../card.py	/^    def __str__(self):$/;"	kind:member	line:98
+__version__	../a2_sample_tests.py	/^__version__ = '1.0.0'$/;"	kind:variable	line:7
+__version__	../a2_support.py	/^__version__ = "1.0.1"$/;"	kind:variable	line:12
+__version__	../gui.py	/^__version__ = "1.0.1"$/;"	kind:variable	line:14
+__version__	../testrunner.py	/^__version__ = ''$/;"	kind:variable	line:2
+_add_flavour	../testrunner.py	/^    def _add_flavour(flavour: str, test_results: List[Tuple[TestCase, str]]):$/;"	kind:member	line:791
+_apply_skip	../testrunner.py	/^    def _apply_skip(self, test: TestCase, test_item: Union[Type[TestCase], FunctionType]):$/;"	kind:member	line:600
+_handle_click	../gui.py	/^    def _handle_click(self, event):$/;"	kind:member	line:256
+_is_relevant_tb_level	../testrunner.py	/^    def _is_relevant_tb_level(self, tb):$/;"	kind:member	line:672
+_read_stream	../testrunner.py	/^    def _read_stream(stream: io.StringIO) -> str:$/;"	kind:member	line:239
+_remove_importlib	../testrunner.py	/^    _remove_importlib = re.compile($/;"	kind:variable	line:708
+_remove_path	../testrunner.py	/^    _remove_path = re.compile(r'File ".*[\\\\\/]([^\\\\\/]+.py)"')$/;"	kind:variable	line:705
+_timeout_wrapper	../testrunner.py	/^def _timeout_wrapper(test_func):$/;"	kind:function	line:110
+_truncateMessage	../testrunner.py	/^    def _truncateMessage(self, message, diff):$/;"	kind:member	line:540
+a2	../a2_sample_tests.py	/^import a2$/;"	kind:namespace	line:13
+a2.py	../a2.py	1;"	kind:file	line:1
+a2_sample_tests.py	../a2_sample_tests.py	1;"	kind:file	line:1
+a2_support	../a2_sample_tests.py	/^import a2_support$/;"	kind:namespace	line:14
+a2_support.py	../a2_support.py	1;"	kind:file	line:1
+addError	../testrunner.py	/^    def addError(self, test: TestCase, err: Tuple[Type, Exception, TracebackType]):$/;"	kind:member	line:664
+addFailure	../testrunner.py	/^    def addFailure(self, test: TestCase, err: Tuple[Type, Exception, TracebackType]):$/;"	kind:member	line:660
+addSkip	../testrunner.py	/^    def addSkip(self, test: TestCase, reason: str):$/;"	kind:member	line:668
+addSubTest	../testrunner.py	/^    def addSubTest(self, test, subtest, err):$/;"	kind:member	line:650
+addSuccess	../testrunner.py	/^    def addSuccess(self, test: TestCase):$/;"	kind:member	line:656
+add_card	../a2.py	/^    def add_card(self,card:Card):$/;"	kind:member	line:246
+add_card	../deck.py	/^    def add_card(self,card:Card):$/;"	kind:member	line:36
+add_cards	../a2.py	/^    def add_cards(self,cards:list):$/;"	kind:member	line:252
+add_cards	../deck.py	/^    def add_cards(self,cards:list):$/;"	kind:member	line:41
+add_menu	../gui.py	/^    def add_menu(self):$/;"	kind:member	line:433
+add_outcome	../testrunner.py	/^    def add_outcome(self, test: TestCase, outcome: TestOutcome):$/;"	kind:member	line:653
+aggregate	../testrunner.py	/^    def aggregate(self, test_func: FunctionType, *args, tag: str = None, **kwargs):$/;"	kind:member	line:520
+aggregate_tests	../testrunner.py	/^    def aggregate_tests(self):$/;"	kind:member	line:526
+anna	../test.py	/^anna = ComputerPlayer("Anna Truffet")$/;"	kind:variable	line:6
+argparse	../testrunner.py	/^import argparse$/;"	kind:namespace	line:4
+assertClassDefined	../testrunner.py	/^    def assertClassDefined(self, module: ModuleType, class_name: str):$/;"	kind:member	line:485
+assertDefined	../testrunner.py	/^    def assertDefined(self, obj: Union[ModuleType, Type], name: str):$/;"	kind:member	line:459
+assertDocString	../testrunner.py	/^    def assertDocString(self, obj: Union[Type, Callable], name: str = None):$/;"	kind:member	line:495
+assertFunctionDefined	../testrunner.py	/^    def assertFunctionDefined(self, obj: Union[ModuleType, Type], function_name: str, params: int):$/;"	kind:member	line:475
+assertIsNotRecursive	../testrunner.py	/^    def assertIsNotRecursive(self, func):$/;"	kind:member	line:507
+assertIsSubclass	../testrunner.py	/^    def assertIsSubclass(self, sub_class: Type, parent_class: Type):$/;"	kind:member	line:491
+assertMultiLineEqual	../testrunner.py	/^    def assertMultiLineEqual(self, first, second, msg=None, strip=False):  # pylint: disable=W0221$/;"	kind:member	line:447
+black	../a2_support.py	/^    black = "#222"$/;"	kind:variable	line:23
+blue	../a2_support.py	/^    blue = "#508ebf"$/;"	kind:variable	line:19
+blue_card	../test4.py	/^blue_card = ReverseCard(0,"blue")$/;"	kind:variable	line:158
+bottom	../a2.py	/^    def bottom(self):$/;"	kind:member	line:266
+build_deck	../a2_support.py	/^def build_deck(structure, range_cards=(Card, )):$/;"	kind:function	line:224
+build_deck	../gui.py	/^from a2_support import FULL_DECK, build_deck, UnoGame, generate_name$/;"	kind:namespace	line:11
+card	../test4.py	/^card = Card(23,"yellow")$/;"	kind:variable	line:117
+card	../test4.py	/^card = Card(42,'red')$/;"	kind:variable	line:128
+card	../test4.py	/^card = Pickup2Card(0,"red")$/;"	kind:variable	line:76
+card	../test4.py	/^card = Pickup4Card(0,"red")$/;"	kind:variable	line:98
+card	../test4.py	/^card = ReverseCard(0,"red")$/;"	kind:variable	line:60
+card	../test4.py	/^card = SkipCard(0,"blue")$/;"	kind:variable	line:41
+card.py	../card.py	1;"	kind:file	line:1
+cards	../test4.py	/^cards = [card,special_card,blue_card]$/;"	kind:variable	line:167
+colour	../a2.py	/^    colour = {'red','blue','yellow','green','black'}$/;"	kind:variable	line:19
+colour	../card.py	/^    colour = {'red','blue','yellow','green','black'}$/;"	kind:variable	line:4
+copy	../a2_sample_tests.py	/^import copy$/;"	kind:namespace	line:15
+current	../a2_support.py	/^    def current(self):$/;"	kind:member	line:78
+current	../card.py	/^    def current(self):$/;"	kind:member	line:199
+current_player	../a2_support.py	/^    def current_player(self):$/;"	kind:member	line:154
+deck	../test.py	/^deck = Deck([Card(1,"red"), Card(2,"blue"),Card(3,"red"), Card(4,"green")])$/;"	kind:variable	line:10
+deck	../test4.py	/^deck = Deck(cards)$/;"	kind:variable	line:168
+deck.py	../deck.py	1;"	kind:file	line:1
+decorator	../testrunner.py	/^    def decorator(obj: Union[Type[TestCase], Callable]):$/;"	kind:function	line:74
+description	../testrunner.py	/^    def description(self) -> str:$/;"	kind:member	line:552
+description	../testrunner.py	/^    def description(self):$/;"	kind:member	line:560
+difflib	../testrunner.py	/^import difflib$/;"	kind:namespace	line:5
+do_clear	../testrunner.py	/^    def do_clear(self, arg):$/;"	kind:member	line:270
+draw	../gui.py	/^    def draw(self):$/;"	kind:member	line:144
+draw	../gui.py	/^    def draw(self):$/;"	kind:member	line:65
+draw	../gui.py	/^    def draw(self, deck, show=True):$/;"	kind:member	line:293
+draw_back	../gui.py	/^    def draw_back(self, colour):$/;"	kind:member	line:91
+draw_board	../gui.py	/^    def draw_board(self):$/;"	kind:member	line:477
+draw_card	../gui.py	/^    def draw_card(self, _):$/;"	kind:member	line:464
+draw_card	../gui.py	/^    def draw_card(self, card, slot):$/;"	kind:member	line:275
+draw_circle	../gui.py	/^    def draw_circle(self, colour):$/;"	kind:member	line:101
+draw_deck	../gui.py	/^    def draw_deck(self, player, show=True):$/;"	kind:member	line:505
+draw_image	../gui.py	/^    def draw_image(self, image):$/;"	kind:member	line:122
+draw_text	../gui.py	/^    def draw_text(self, text, colour):$/;"	kind:member	line:111
+draw_title	../gui.py	/^    def draw_title(self, player):$/;"	kind:member	line:521
+format_error	../testrunner.py	/^    def format_error(self, name: str, exc_info) -> Tuple[str, str]:$/;"	kind:member	line:834
+game	../test.py	/^game = UnoGame(deck,players)$/;"	kind:variable	line:12
+generate_name	../a2_support.py	/^def generate_name():$/;"	kind:function	line:252
+generate_name	../gui.py	/^from a2_support import FULL_DECK, build_deck, UnoGame, generate_name$/;"	kind:namespace	line:11
+getTestCaseNames	../testrunner.py	/^    def getTestCaseNames(self, testCaseClass: Type[unittest.TestCase]):$/;"	kind:member	line:339
+get_amount	../a2.py	/^    def get_amount(self):$/;"	kind:member	line:218
+get_amount	../deck.py	/^    def get_amount(self):$/;"	kind:member	line:12
+get_card_view	../gui.py	/^    def get_card_view(self, card):$/;"	kind:member	line:264
+get_cards	../a2.py	/^    def get_cards(self):$/;"	kind:member	line:214
+get_cards	../deck.py	/^    def get_cards(self):$/;"	kind:member	line:8
+get_colour	../a2.py	/^    def get_colour(self):$/;"	kind:member	line:34
+get_colour	../card.py	/^    def get_colour(self):$/;"	kind:member	line:18
+get_deck	../a2.py	/^    def get_deck(self):$/;"	kind:member	line:303
+get_deck	../a2.py	/^    def get_deck(self):$/;"	kind:member	line:337
+get_deck	../a2.py	/^    def get_deck(self):$/;"	kind:member	line:375
+get_deck	../player.py	/^    def get_deck(self):$/;"	kind:member	line:18
+get_name	../a2.py	/^    def get_name(self):$/;"	kind:member	line:299
+get_name	../a2.py	/^    def get_name(self):$/;"	kind:member	line:339
+get_name	../a2.py	/^    def get_name(self):$/;"	kind:member	line:378
+get_name	../player.py	/^    def get_name(self):$/;"	kind:member	line:14
+get_name_for_object	../testrunner.py	/^def get_name_for_object(obj):$/;"	kind:function	line:155
+get_number	../a2.py	/^    def get_number(self):$/;"	kind:member	line:30
+get_number	../card.py	/^    def get_number(self):$/;"	kind:member	line:14
+get_pickup_amount	../a2.py	/^    def get_pickup_amount(self):$/;"	kind:member	line:47
+get_pickup_amount	../card.py	/^    def get_pickup_amount(self):$/;"	kind:member	line:167
+get_pickup_amount	../card.py	/^    def get_pickup_amount(self):$/;"	kind:member	line:39
+get_pickup_amount0	../card.py	/^    def get_pickup_amount0(self):$/;"	kind:member	line:143
+get_turns	../a2_support.py	/^    def get_turns(self):$/;"	kind:member	line:168
+global_trace	../testrunner.py	/^    def global_trace(self, _frame, event, _arg):$/;"	kind:member	line:409
+green	../a2_support.py	/^    green = "#5d8402"$/;"	kind:variable	line:22
+gui.py	../gui.py	1;"	kind:file	line:1
+has_won	../a2.py	/^    def has_won(self):$/;"	kind:member	line:313
+has_won	../a2.py	/^    def has_won(self):$/;"	kind:member	line:343
+has_won	../a2.py	/^    def has_won(self):$/;"	kind:member	line:384
+has_won	../player.py	/^    def has_won(self):$/;"	kind:member	line:28
+human	../test4.py	/^human = HumanPlayer("Peter Sutton")$/;"	kind:variable	line:206
+import_module	../testrunner.py	/^        Tuple[Optional[ModuleType], Optional[Tuple[Type, Exception, TracebackType]]]:$/;"	kind:function	line:90
+importlib	../testrunner.py	/^import importlib.util$/;"	kind:namespace	line:6
+indent	../testrunner.py	/^    indent = ' ' * TAB_SIZE$/;"	kind:variable	line:704
+init	../test4.py	/^def init():$/;"	kind:function	line:22
+inspect	../testrunner.py	/^import inspect$/;"	kind:namespace	line:7
+io	../testrunner.py	/^import io$/;"	kind:namespace	line:8
+is_over	../a2_support.py	/^    def is_over(self):$/;"	kind:member	line:172
+is_playable	../a2.py	/^    def is_playable(self):$/;"	kind:member	line:307
+is_playable	../a2.py	/^    def is_playable(self):$/;"	kind:member	line:373
+is_playable	../player.py	/^    def is_playable(self):$/;"	kind:member	line:22
+json	../testrunner.py	/^import json$/;"	kind:namespace	line:9
+kill	../testrunner.py	/^    def kill(self):$/;"	kind:member	line:406
+loadGame	../a2_sample_tests.py	/^    def loadGame(self):$/;"	kind:member	line:248
+loadTestCases	../testrunner.py	/^    def loadTestCases(self, test_cases) -> unittest.TestSuite:  # pylint: disable=C0103$/;"	kind:member	line:348
+local_trace	../testrunner.py	/^    def local_trace(self, _frame, event, _arg):$/;"	kind:member	line:415
+main	../a2.py	/^def main():$/;"	kind:function	line:391
+main	../a2_sample_tests.py	/^def main():$/;"	kind:function	line:547
+main	../a2_support.py	/^def main():$/;"	kind:function	line:261
+main	../gui.py	/^def main():$/;"	kind:function	line:565
+matches	../a2.py	/^    def matches(self, card):$/;"	kind:member	line:52
+matches	../a2.py	/^    def matches(self,card):$/;"	kind:member	line:128
+matches	../a2.py	/^    def matches(self,card):$/;"	kind:member	line:152
+matches	../a2.py	/^    def matches(self,card):$/;"	kind:member	line:179
+matches	../card.py	/^    def matches(self, card):$/;"	kind:member	line:45
+matches	../card.py	/^    def matches(self,card):$/;"	kind:member	line:82
+messagebox	../gui.py	/^from tkinter import messagebox$/;"	kind:namespace	line:7
+name	../testrunner.py	/^    def name(self) -> str:$/;"	kind:member	line:548
+new_card	../test4.py	/^new_card = SkipCard(0,"green")$/;"	kind:variable	line:179
+new_game	../gui.py	/^    def new_game(self):$/;"	kind:member	line:413
+next	../a2_support.py	/^    def next(self):$/;"	kind:member	line:84
+next	../card.py	/^    def next(self):$/;"	kind:member	line:205
+next_player	../a2_support.py	/^    def next_player(self):$/;"	kind:member	line:145
+number_	../a2.py	/^    number_ = {1, 2, 3, 4, 5, 6, 7, 8, 9}$/;"	kind:variable	line:20
+number_	../card.py	/^    number_ = {1, 2, 3, 4, 5, 6, 7, 8, 9}$/;"	kind:variable	line:5
+output_resuls	../testrunner.py	/^    def output_resuls(self, all_tests: List[TestCase], result: TestResult):$/;"	kind:member	line:859
+peak	../a2_support.py	/^    def peak(self, count=1):$/;"	kind:member	line:90
+peak	../card.py	/^    def peak(self, count=1):$/;"	kind:member	line:211
+pick	../a2.py	/^    def pick(self,amount:int=1):$/;"	kind:member	line:228
+pick	../deck.py	/^    def pick(self,amount:int=1):$/;"	kind:member	line:22
+pick_card	../a2.py	/^    def pick_card(self, putdown_pile:Deck):$/;"	kind:member	line:322
+pick_card	../a2.py	/^    def pick_card(self,putdown_pile:Deck):$/;"	kind:member	line:341
+pick_card	../a2.py	/^    def pick_card(self,putdown_pile:Deck):$/;"	kind:member	line:359
+pick_card	../gui.py	/^    def pick_card(self, player, slot):$/;"	kind:member	line:446
+pick_card	../player.py	/^    def pick_card(self, putdown_pile:Deck):$/;"	kind:member	line:37
+play	../a2.py	/^    def play(self, player, game):$/;"	kind:member	line:62
+play	../card.py	/^    def play(self, player, game):$/;"	kind:member	line:55
+play	../gui.py	/^    def play(self):$/;"	kind:member	line:560
+player	../test4.py	/^player = Player("Peter O'Shea")$/;"	kind:variable	line:196
+player.py	../player.py	1;"	kind:file	line:1
+players	../test.py	/^players = [anna,HumanPlayer("Henry O'Brien"),ComputerPlayer("Josh Arnold")]$/;"	kind:variable	line:8
+print_error	../testrunner.py	/^    def print_error(self, flavour: str, test: TestCase, msg: str):$/;"	kind:member	line:824
+print_results	../testrunner.py	/^    def print_results(self, failed_tests: List[Tuple[str, TestCase, str]], result: TestResult):$/;"	kind:member	line:794
+random	../a2.py	/^import random$/;"	kind:namespace	line:8
+random	../a2_support.py	/^import random$/;"	kind:namespace	line:5
+random	../deck.py	/^import random$/;"	kind:namespace	line:2
+random	../player.py	/^import random$/;"	kind:namespace	line:3
+re	../testrunner.py	/^import re$/;"	kind:namespace	line:10
+readline	../testrunner.py	/^    def readline(self, size: int = None):$/;"	kind:member	line:184
+red	../a2_support.py	/^    red = "#a30e15"$/;"	kind:variable	line:20
+redraw	../gui.py	/^    def redraw(self, card):$/;"	kind:member	line:149
+redraw	../gui.py	/^    def redraw(self, card):$/;"	kind:member	line:180
+redraw	../gui.py	/^    def redraw(self, card):$/;"	kind:member	line:71
+register_module	../testrunner.py	/^    def register_module(cls, name: str, module: ModuleType):$/;"	kind:member	line:444
+render_decks	../gui.py	/^    def render_decks(self):$/;"	kind:member	line:369
+resize	../gui.py	/^    def resize(self, size):$/;"	kind:member	line:326
+reverse	../a2_support.py	/^    def reverse(self):$/;"	kind:member	line:106
+reverse	../a2_support.py	/^    def reverse(self):$/;"	kind:member	line:164
+reverse	../card.py	/^    def reverse(self):$/;"	kind:member	line:227
+run	../testrunner.py	/^    def run(self):$/;"	kind:member	line:396
+run	../testrunner.py	/^    def run(self, test_cases: List[Union[TestCase, Type[TestCase]]]) -> TestResult:$/;"	kind:member	line:884
+runTest	../testrunner.py	/^    def runTest(self):$/;"	kind:member	line:693
+run_time	../testrunner.py	/^    def run_time(self):$/;"	kind:member	line:586
+select_card	../a2_support.py	/^    def select_card(self, player, card):$/;"	kind:member	line:183
+separator2	../testrunner.py	/^    separator2 = '-' * BLOCK_WIDTH$/;"	kind:variable	line:703
+set_colour	../a2.py	/^    def set_colour(self,colour):$/;"	kind:member	line:42
+set_colour	../card.py	/^    def set_colour(self,colour):$/;"	kind:member	line:26
+set_number	../a2.py	/^    def set_number(self, number:int):$/;"	kind:member	line:38
+set_number	../card.py	/^    def set_number(self, number:int):$/;"	kind:member	line:22
+set_stdin	../testrunner.py	/^    def set_stdin(self, string: str):$/;"	kind:member	line:245
+set_value	../testrunner.py	/^    def set_value(self, string):$/;"	kind:member	line:174
+shuffle	../a2.py	/^    def shuffle(self):$/;"	kind:member	line:222
+shuffle	../deck.py	/^    def shuffle(self):$/;"	kind:member	line:16
+skip	../a2_support.py	/^    def skip(self):$/;"	kind:member	line:160
+skip	../a2_support.py	/^    def skip(self, count=0):$/;"	kind:member	line:112
+skip	../card.py	/^    def skip(self, count=0):$/;"	kind:member	line:233
+skipIfFailed	../a2_sample_tests.py	/^from testrunner import skipIfFailed$/;"	kind:namespace	line:11
+skipIfFailed	../testrunner.py	/^def skipIfFailed(test_case: Type[unittest.TestCase] = None, test_name: str = None, tag: str = None):  # pylint: disable=C0103$/;"	kind:function	line:49
+special_card	../test4.py	/^special_card = Pickup2Card(0,"red")$/;"	kind:variable	line:144
+startTest	../testrunner.py	/^    def startTest(self, test: TestCase):$/;"	kind:member	line:589
+startTestRun	../testrunner.py	/^    def startTestRun(self):$/;"	kind:member	line:577
+stderr	../testrunner.py	/^    def stderr(self) -> str:$/;"	kind:member	line:265
+stdinout	../testrunner.py	/^    def stdinout(self):$/;"	kind:member	line:257
+stdout	../testrunner.py	/^    def stdout(self) -> str:$/;"	kind:member	line:261
+step	../gui.py	/^    def step(self):$/;"	kind:member	line:532
+stopTestRun	../testrunner.py	/^    def stopTestRun(self):$/;"	kind:member	line:581
+sys	../testrunner.py	/^import sys$/;"	kind:namespace	line:11
+system	../test4.py	/^from os import system$/;"	kind:namespace	line:181
+take_turn	../a2_support.py	/^    def take_turn(self, player):$/;"	kind:member	line:196
+take_turn	../gui.py	/^    def take_turn(self):$/;"	kind:member	line:551
+take_turns	../a2_support.py	/^    def take_turns(self):$/;"	kind:member	line:213
+test.py	../test.py	1;"	kind:file	line:1
+test4.py	../test4.py	1;"	kind:file	line:1
+test_card_are_subclasses	../a2_sample_tests.py	/^    def test_card_are_subclasses(self):$/;"	kind:member	line:97
+test_card_defined	../a2_sample_tests.py	/^    def test_card_defined(self):$/;"	kind:member	line:74
+test_card_docstring	../a2_sample_tests.py	/^    def test_card_docstring(self):$/;"	kind:member	line:85
+test_card_getters	../a2_sample_tests.py	/^    def test_card_getters(self):$/;"	kind:member	line:148
+test_card_matches_any	../a2_sample_tests.py	/^    def test_card_matches_any(self):$/;"	kind:member	line:205
+test_card_matches_colour	../a2_sample_tests.py	/^    def test_card_matches_colour(self):$/;"	kind:member	line:185
+test_card_matches_number	../a2_sample_tests.py	/^    def test_card_matches_number(self):$/;"	kind:member	line:173
+test_card_methods	../a2_sample_tests.py	/^    def test_card_methods(self):$/;"	kind:member	line:79
+test_card_pickup_amount	../a2_sample_tests.py	/^    def test_card_pickup_amount(self):$/;"	kind:member	line:167
+test_card_setters	../a2_sample_tests.py	/^    def test_card_setters(self):$/;"	kind:member	line:156
+test_card_str	../a2_sample_tests.py	/^    def test_card_str(self):$/;"	kind:member	line:225
+test_card_subclasses	../a2_sample_tests.py	/^    def test_card_subclasses(self):$/;"	kind:member	line:91
+test_deck_add_card	../a2_sample_tests.py	/^    def test_deck_add_card(self):$/;"	kind:member	line:439
+test_deck_add_cards	../a2_sample_tests.py	/^    def test_deck_add_cards(self):$/;"	kind:member	line:421
+test_deck_cards_amount	../a2_sample_tests.py	/^    def test_deck_cards_amount(self):$/;"	kind:member	line:371
+test_deck_constructor	../a2_sample_tests.py	/^    def test_deck_constructor(self):$/;"	kind:member	line:356
+test_deck_defined	../a2_sample_tests.py	/^    def test_deck_defined(self):$/;"	kind:member	line:102
+test_deck_docstring	../a2_sample_tests.py	/^    def test_deck_docstring(self):$/;"	kind:member	line:113
+test_deck_methods	../a2_sample_tests.py	/^    def test_deck_methods(self):$/;"	kind:member	line:107
+test_deck_pick	../a2_sample_tests.py	/^    def test_deck_pick(self):$/;"	kind:member	line:399
+test_deck_shuffle	../a2_sample_tests.py	/^    def test_deck_shuffle(self):$/;"	kind:member	line:382
+test_deck_top	../a2_sample_tests.py	/^    def test_deck_top(self):$/;"	kind:member	line:459
+test_play_card	../a2_sample_tests.py	/^    def test_play_card(self):$/;"	kind:member	line:277
+test_play_pickup	../a2_sample_tests.py	/^    def test_play_pickup(self):$/;"	kind:member	line:337
+test_play_reverse	../a2_sample_tests.py	/^    def test_play_reverse(self):$/;"	kind:member	line:312
+test_play_skip	../a2_sample_tests.py	/^    def test_play_skip(self):$/;"	kind:member	line:293
+test_player_are_subclasses	../a2_sample_tests.py	/^    def test_player_are_subclasses(self):$/;"	kind:member	line:141
+test_player_constructor	../a2_sample_tests.py	/^    def test_player_constructor(self):$/;"	kind:member	line:475
+test_player_defined	../a2_sample_tests.py	/^    def test_player_defined(self):$/;"	kind:member	line:118
+test_player_docstring	../a2_sample_tests.py	/^    def test_player_docstring(self):$/;"	kind:member	line:129
+test_player_has_won	../a2_sample_tests.py	/^    def test_player_has_won(self):$/;"	kind:member	line:488
+test_player_methods	../a2_sample_tests.py	/^    def test_player_methods(self):$/;"	kind:member	line:123
+test_player_pick_card	../a2_sample_tests.py	/^    def test_player_pick_card(self):$/;"	kind:member	line:499
+test_player_pick_card_auto	../a2_sample_tests.py	/^    def test_player_pick_card_auto(self):$/;"	kind:member	line:518
+test_player_playable	../a2_sample_tests.py	/^    def test_player_playable(self):$/;"	kind:member	line:481
+test_player_subclasses	../a2_sample_tests.py	/^    def test_player_subclasses(self):$/;"	kind:member	line:135
+testrunner.py	../testrunner.py	1;"	kind:file	line:1
+textwrap	../testrunner.py	/^import textwrap$/;"	kind:namespace	line:12
+thread_wrapper	../testrunner.py	/^    def thread_wrapper(self):$/;"	kind:function	line:118
+threading	../testrunner.py	/^import threading$/;"	kind:namespace	line:13
+time	../testrunner.py	/^import time$/;"	kind:namespace	line:14
+timeout	../testrunner.py	/^    timeout = DEFAULT_TIMEOUT$/;"	kind:variable	line:389
+timeout	../testrunner.py	/^def timeout(seconds: float = 0):$/;"	kind:function	line:147
+timeout_decorator	../testrunner.py	/^    def timeout_decorator(test_obj):$/;"	kind:function	line:149
+tk	../gui.py	/^import tkinter as tk$/;"	kind:namespace	line:6
+to_dict	../testrunner.py	/^    def to_dict(self):$/;"	kind:member	line:680
+toggle_active	../gui.py	/^    def toggle_active(self, active=None):$/;"	kind:member	line:234
+toggle_playing	../gui.py	/^    def toggle_playing(self, playing=None):$/;"	kind:member	line:245
+top	../a2.py	/^    def top(self):$/;"	kind:member	line:258
+top	../deck.py	/^    def top(self):$/;"	kind:member	line:46
+traceback	../testrunner.py	/^import traceback$/;"	kind:namespace	line:15
+unique	../testrunner.py	/^from enum import Enum, unique$/;"	kind:namespace	line:20
+unittest	../testrunner.py	/^import unittest$/;"	kind:namespace	line:16
+update	../gui.py	/^    def update(self):$/;"	kind:member	line:398
+user_call	../testrunner.py	/^    def user_call(self, frame, argument_list):$/;"	kind:member	line:277
+user_return	../testrunner.py	/^    def user_return(self, frame, return_value):$/;"	kind:member	line:283
+util	../testrunner.py	/^import importlib.util$/;"	kind:namespace	line:6
+wrapper	../testrunner.py	/^        def wrapper(*args, **kwargs):$/;"	kind:function	line:83
+wraps	../testrunner.py	/^from functools import wraps$/;"	kind:namespace	line:21
+write	../testrunner.py	/^    def write(self, s: str):$/;"	kind:member	line:179
+yellow	../a2_support.py	/^    yellow = "#f9bf3b"$/;"	kind:variable	line:21

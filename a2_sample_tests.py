@@ -12,6 +12,7 @@ from testrunner import skipIfFailed
 
 import a2
 import a2_support
+import copy
 
 CARD_CLASS = {
     '__init__': 3,
