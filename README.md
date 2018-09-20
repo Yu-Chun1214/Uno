@@ -4,7 +4,7 @@
 
 python3 test.py
 
-## All Class are in a2.py
+## All Classes are in a2.py
 
 You can test the code by importing
 
