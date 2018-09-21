@@ -1,0 +1,48 @@
+/------------------------------------------------------------------------------\
+|                              Summary of Results                              |
+\------------------------------------------------------------------------------/
+TestDesign
+    + 1. Card class is defined
+    + 2. Card class has required methods
+    + 3. All Card class methods have docstrings
+    + 4. All card subclasses are defined
+    + 5. All card subclasses are actually subclasses of Card
+    + 6. Deck class is defined
+    + 7. Deck class has required methods
+    + 8. All Deck class methods have docstrings
+    + 9. Player class is defined
+    + 10. Player class has required methods
+    + 11. All player class methods have docstrings
+    + 12. All player subclasses are defined
+    + 13. All player subclasses are actually subclasses of Player
+TestCard
+    + 1. test_card_getters
+    + 2. test_card_setters
+    + 3. test_card_pickup_amount
+    + 4. test_card_matches_number
+    + 5. test_card_matches_colour
+    + 6. test_card_matches_any
+    + 7. test_card_str
+TestDeck
+    + 1. test_deck_constructor
+    + 2. test_deck_cards_amount
+    + 3. test_deck_shuffle
+    + 4. test_deck_pick
+    + 5. test_deck_add_cards
+    + 6. test_deck_add_card
+    + 7. test_deck_top
+TestPlayer
+    + 1. test_player_constructor
+    + 2. test_player_playable
+    + 3. test_player_has_won
+    + 4. test_player_pick_card
+    + 5. test_player_pick_card_auto
+TestGameplay
+    + 1. test_play_card
+    + 2. test_play_skip
+    + 3. test_play_reverse
+    + 4. test_play_pickup
+TestNoPrint
+    + test code doesn't print
+--------------------------------------------------------------------------------
+Ran 37 tests in 0.003 seconds with 37 passed/0 skipped/0 failed.
