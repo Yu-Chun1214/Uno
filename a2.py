@@ -280,8 +280,8 @@ class ComputerPlayer(Player):
         """
         pile_card is the card on the top of putdown_pile
         card is the card on the top of self.deck
-
         every turn in whill loop below,card will be renewed
+
         if pile_card.matches(card) is true
         self.deck will pick the top card (statement: retrun self.deck.pick()[0])
 
@@ -290,6 +290,7 @@ class ComputerPlayer(Player):
 
         all cards are checked by while loop.
         the most times of while loop turn is self.deck's cards amount
+        so that all cards will be checked
         
         if all card checked and cannot find the the appropriate cards
         the program will drop out the loop and return None
