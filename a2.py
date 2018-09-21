@@ -122,10 +122,12 @@ class Pickup2Card(Card):
         else:
             return False
             
-    def play(self, player, game):
+    def play(self, player, game):# modified
         for i in range(2):
             next_player = game.get_turns().peak()
             next_player.get_deck().add_cards(game.pickup_pile.pick())
+        # next_player = game.get_turns().peak()
+        # next_player.get_deck().add_cards(game.pickup_pile.pick(self.pickup_amount))
         while True:
             name = game.current_player().get_name()
             if name == player.get_name():
@@ -151,10 +153,12 @@ class Pickup4Card(Card):
     def matches(self, card):#The special card Pickup4Card matches any colour
         return True
         
-    def play(self, player, game):
+    def play(self, player, game):# modified
         for i in range(4):
             next_player = game.get_turns().peak()
             next_player.get_deck().add_cards(game.pickup_pile.pick())
+        # next_player = game.get_turns().peak()
+        # next_player.get_deck().add_cards(game.pickup_pile.pick(self.pickup_amount))
         while True:
             name = game.current_player().get_name()
             if name == player.get_name():
@@ -277,11 +281,18 @@ class ComputerPlayer(Player):
         pile_card is the card on the top of putdown_pile
         card is the card on the top of self.deck
 
-        every turn in whill loop below,card will renew
+        every turn in whill loop below,card will be renewed
         if pile_card.matches(card) is true
         self.deck will pick the top card (statement: retrun self.deck.pick()[0])
 
-        if pile_card 
+        if pile_card.matches(card) is false
+        the deck will shuffle(statement : self.deck.shuffle() )
+
+        all cards are checked by while loop.
+        the most times of while loop turn is self.deck's cards amount
+        
+        if all card checked and cannot find the the appropriate cards
+        the program will drop out the loop and return None
         """
         pile_card = putdown_pile.top()
         i = 0
