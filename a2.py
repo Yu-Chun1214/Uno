@@ -297,9 +297,10 @@ class ComputerPlayer(Player):
         """
         pile_card = putdown_pile.top()
         i = 0
-        while i<= self.deck.get_amount():
+        while i <= self.deck.get_amount()+1:
             card = self.deck.top()
-            if pile_card.matches(card):
+            match = pile_card.matches(card)
+            if match:
                 return self.deck.pick()[0]
             else:
                 self.deck.shuffle()
